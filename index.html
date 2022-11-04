@@ -15,18 +15,30 @@
         }
          *{color:rgb(79, 76, 73);}
         h1 {
-            background-color: rgb(32, 29, 31);
+            background-color: #212121;
             color: rgb(231, 182, 215);
         }
         h2{background-color: rgb(233, 179, 205);
            color: rgb(53, 47, 52);
         }
+        form{
+            font-size:smaller;
+            position: absolute;
+            left: 1200px;
+            top: 150px;
+            width: 150px;
+            height: 150px;
+            margin: 20px 30px 40px;
+        }
         h3{
             font-size: 1em;
         }
         h4{
-            font-size: 2em;
-            color: rgb(251, 159, 222);
+            font-size: 1.5em;
+            color: rgb(237, 52, 178);
+        }
+        a{
+            text-decoration: none;
         }
         ul{
             list-style:square
@@ -34,14 +46,16 @@
         footer{
             height: 300px;
             width: 100%;
-            font-size: 1.3em;
+            border: 100px;
+            font-size: 1.2em;
             text-align:unset;
-            background-color: rgb(30, 29, 29);
-            color: rgb(124, 115, 119);
+            background-color: rgb(204, 148, 181);
+            color: rgb(47, 46, 46);
         }
     </style>
 </head>
 <body>
+    <header id="home">
         <h1>About Seeun Jung</h1>
         <h3> PLAY MUSIC ♬</h3>
         <audio src="y2mate.com - LaBlue  Astrønne  Sous la pluie.mp3" controls autoplay loop></audio><br>
@@ -53,11 +67,30 @@
             <li> 출생지: 부산 </li>
             <li> 소속: 동아대학교 경영정보학과 </li>
         </ul>
-    </header>
+        <form action="#" method="get">
+            <fieldset>
+                <legend> LOGIN </legend>
+                Id <input type="text" name="id" id=""><br>
+                Password <input type="password" name="pw" id=""><br>
+                Email <input type="email" name="email" id=""><br>
+                Birth Date <input type="date" name="birth" id=""><br>
+                Country : <input type="text" list="countries">
+                       <datalist id="countries">
+                       <option value="ENGLAND">
+                       <option value="SOUTH KOREA">
+                       <option value="FRANCE">
+                       </datalist></br>
+                Favorite color <input type="color" name="color" id=""><br>
+                M <input type="radio" name="gender" value="M" id="">
+                F <input type="radio" name="gender" value="F" id="">
+            </fieldset>
+            <input type="submit" value="Join">
+            <input type="reset" value="Cancel">
+        </form>
     <section>
         <article>
             <div class="media">
-                <h2>01 My Favorite Songs</h2>
+                <h2>01 My favorite songs</h2>
                 <table border="1">
                     <tr>
                         <th>아티스트</th>
@@ -80,17 +113,18 @@
                         <td>Alternative Rock</td>
                     </tr>
                 </table><br>
-        <form action="https://www.google.co.kr/" target="_blank" method="get">
-            좋아하는 음악 장르: <input type="text" name="장르">
-            <input type="submit" value="제출">
-        </form>
+                <form1 action="https://www.google.co.kr/" target="_blank" method="get">
+                    좋아하는 음악 장르: <input type="text" name="장르">
+                    <input type="submit" value="제출">
+                </form>
             <h3>easy life live video</h3>
             <video src="./Easy Life - Sangria ft. Arlo Parks (Lockdown Version).mp4" controls width="30%"></video>
             </div> 
-         </article>
-         <article>
-            <div class="book">
-                <h2>02 My Favorite book</h2>
+
+            <h2>02 My soul food </h2>
+            <a href="./food.html"> 소울푸드, 클릭하시오 </a></br>
+
+            <h2>03 My favorite book</h2>
             <table border="1">
                 <tr>
                     <th>작가</th>
@@ -105,11 +139,8 @@
             </table><br>
             <img src="./he.jpeg" alt="" iframe width="25%" height="420" >
             <img src="./he3.jpg" alt="" iframe width="25%" height="400" >
-            </div>
-        </article>    
-        <article>
-             <div class="bookmark">
-                <h2>03 My hobby</h2>
+
+             <h2>04 My hobby</h2>
                 <img src="./he4.jpg" alt="" iframe width="65%" height="350" >
                 <nav>
                     <ul>
@@ -119,19 +150,16 @@
                         <li><a href="https://www.eqlstore.com/main?utm_source=brandsearch_PC&utm_medium=cpc&utm_campaign=220930_event_logo_text&utm_content=homelink&utm_term=EQL%EC%8A%A4%ED%86%A0%EC%96%B4" target="_blank">편집샵 쇼핑하기</a></li>
                     </ul>
                 </nav>
-             </div>
         </article>
     </section>
     <footer>
-        <h4>@Seeun</h4>
-        service
-        <br>
-        <br>
-        help
-        <br>
-        <br>
+        <h4>@locoooodkjsisjs</h4>
+        <a href="#home">home이동</a><br></br>
+        customer care<br></br>
+        service<br></br>
+        help<br></br>
         <div class="sns">
-            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-instagram" a href="https://www.instagram.com/" target="_blank"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-solid fa-envelope"></i>
         </div>
